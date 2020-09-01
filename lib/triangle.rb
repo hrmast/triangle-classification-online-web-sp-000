@@ -24,7 +24,7 @@ class Triangle
     (x + y) > z && (x + z) > y && (y + z) > x ? true : false
   end
 
-  def self.valid2(x,y,z)
+  def self.valid2(x, y, z)
     x > 0 && y > 0 && z > 0 ? true : false
   end
 
