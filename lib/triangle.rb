@@ -22,7 +22,7 @@ class Triangle
     #binding.pry
   end
 
-  class TriangleError
+  class TriangleError < StandardError
 
   end
 
