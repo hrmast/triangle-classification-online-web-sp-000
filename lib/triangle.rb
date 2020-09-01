@@ -23,7 +23,7 @@ class Triangle
   end
 
   class TriangleError < StandardError
-
+    error = "This triangle is invalid."
   end
 
   def self.valid(x, y, z)
