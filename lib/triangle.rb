@@ -21,12 +21,7 @@ class Triangle
     end
     #binding.pry
   end
-
-  def raise_error
-    if self.valid == false && self.valid2 == false
-      raise TriangleError < StandardError
-
-
+  
   class TriangleError
 
   end
