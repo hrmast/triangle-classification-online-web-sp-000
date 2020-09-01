@@ -22,11 +22,11 @@ class Triangle
     #binding.pry
   end
 
-  def valid(x, y, z)
+  def valid
     (x + y) > z && (x + z) > y && (y + z) > x ? true : false
   end
 
-  def valid2(x, y, z)
+  def valid2
     x > 0 && y > 0 && z > 0 ? true : false
   end
 
