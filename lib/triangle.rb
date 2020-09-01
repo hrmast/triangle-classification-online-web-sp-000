@@ -11,7 +11,7 @@ class Triangle
 
   def kind
     if self.valid == false && self.valid2 == false
-      raise TriangleError < StandardError
+      raise TriangleError
     elsif x == y && y == z && z == x
       :equilateral
     elsif x != y && y != z && x != z
@@ -21,7 +21,7 @@ class Triangle
     end
     #binding.pry
   end
-  
+
   class TriangleError
 
   end
