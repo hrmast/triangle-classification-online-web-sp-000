@@ -22,16 +22,15 @@ class Triangle
     #binding.pry
   end
 
-  class TriangleError < StandardError
-
-  end
-
-  def self.valid(x, y, z)
+  def valid(x, y, z)
     (x + y) > z && (x + z) > y && (y + z) > x ? true : false
   end
 
-  def self.valid2(x, y, z)
+  def valid2(x, y, z)
     x > 0 && y > 0 && z > 0 ? true : false
   end
 
+  class TriangleError < StandardError
+
+  end
 end
