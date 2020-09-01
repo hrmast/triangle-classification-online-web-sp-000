@@ -10,7 +10,7 @@ class Triangle
   end
 
   def kind
-    if self.valid == false && self.valid2 == false
+    if valid == false && valid2 == false
       raise TriangleError.error
     elsif x == y && y == z && z == x
       :equilateral
