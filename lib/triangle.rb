@@ -1,6 +1,6 @@
 require "pry"
 class Triangle
-  attr_accessor :x, :y, :z, :valid, :valid2
+  attr_accessor :x, :y, :z
 
 
   def initialize(x, y, z)
@@ -23,7 +23,7 @@ class Triangle
   end
 
   class TriangleError < StandardError
-    error = "This triangle is invalid."
+    
   end
 
   def self.valid(x, y, z)
