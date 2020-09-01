@@ -10,7 +10,9 @@ class Triangle
   end
 
   def kind
-    if x == y && y == z && z == x
+    if self.valid == false && self.valid2 == false
+      raise TriangleError < StandardError
+    elsif x == y && y == z && z == x
       :equilateral
     elsif x != y && y != z && x != z
       :scalene
@@ -23,9 +25,7 @@ class Triangle
   def raise_error
     if self.valid == false && self.valid2 == false
       raise TriangleError < StandardError
-    else
-    end
-  end
+    
 
   class TriangleError
 
