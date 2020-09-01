@@ -28,4 +28,7 @@ class Triangle
     x > 0 && y > 0 && z > 0 ? true : false
   end
 
+  class TriangleError
+  end
+
 end
